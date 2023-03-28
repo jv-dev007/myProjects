@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&amp;display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+ 
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #D21617;
+}
+
+#logo {
+    width: 130px;
+    height: auto;
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+width: 90%;
+display: grid;
+grid-template-columns:repeat(3, 1fr);
+row-gap: 20px;
+column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+
+.banner-1 {
+    background-image: url('https://th.bing.com/th/id/R.0327464e7bb06921d6627505a956dcc5?rik=ApcKBZmlLQql1Q&riu=http%3a%2f%2fthumbnails86.imagebam.com%2f20587%2f10cb14205866728.jpg&ehk=NB3S9rexpNRVRAmv%2b5ZAXzIx1hsLWtY3tBuTjSiNMj4%3d&risl=&pid=ImgRaw&r=0');
+}
+
+.banner-2 {
+    background-image: url('https://th.bing.com/th/id/R.ec6b322934f0b09989f5bd351e2f91aa?rik=EwwGPrt5eLhlFA&riu=http%3a%2f%2fbr.web.img3.acsta.net%2fc_215_290%2fpictures%2f19%2f10%2f15%2f00%2f01%2f0117953.jpg&ehk=9sSNdClEDd0JIOhS9kqaHW1sNO6BGP41%2f6YHXA5kHOg%3d&risl=&pid=ImgRaw&r=0');
+}
+
+.banner-3 {
+    background-image: url('https://th.bing.com/th/id/R.a80e502202e15c60ef40bc5b608da038?rik=y1vbXXvGsKbfYA&riu=http%3a%2f%2fi0.sinaimg.cn%2fent%2fv%2fu%2fhlw%2f2014-08-12%2fU10668P28T3D4190690F358DT20140812190536.jpg&ehk=4DkeJDuKEv914PDhxb%2bypSOWGlG1u%2f7A7faK8%2b2BdVk%3d&risl=&pid=ImgRaw&r=0');
+}
+
+.banner-4 {
+    background-image: url('https://th.bing.com/th/id/R.23ca2f338c1a312c05842ebcd2012c14?rik=Wo2x4xv5%2bRlmnQ&pid=ImgRaw&r=0');
+}
+
+.banner-5 {
+    background-image: url('https://th.bing.com/th/id/OIP.fZrWielfQ1-pL48CUzzf6AAAAA?pid=ImgDet&w=301&h=450&rs=1');
+}
+
+.banner-6 {
+    background-image: url('https://thumbs.dreamstime.com/b/paul-dano-los-angeles-ca-september-premiere-his-movie-prisoners-academy-motion-picture-arts-sciences-46064674.jpg');
+}
+
+
+.card:hover {
+    transform: scale(1.02);
+}
+    
+footer {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.span {
+    color: #fff;
+    display: none;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+    }    
+}
